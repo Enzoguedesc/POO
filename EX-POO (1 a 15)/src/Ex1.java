@@ -18,7 +18,7 @@ public class Ex1 {
         int soma = x + y;
         int subtracao = x - y;
         int multiplicacao = x * y;
-        float divisao = (float) x / y;
+        int divisao = x / y;
 
         System.out.println("Soma: " + soma);
         System.out.println("Subtração: " + subtracao);

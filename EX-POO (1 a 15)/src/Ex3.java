@@ -10,18 +10,18 @@ public class Ex3{
         Scanner teclado = new Scanner(System.in);
 
         System.out.print("Salário: ");
-        int x = teclado.nextInt();
+        float x = teclado.nextFloat();
 
-        System.out.print("Percentual de aumento: ");
-        int y = teclado.nextInt();
+        System.out.print("Percentual de aumento (%): ");
+        float aumento = teclado.nextFloat();
 
-        int percentual = (y + 100)/100;
+        float percentual = (aumento + 100)/100;
 
-        int NovoSalario =  x * percentual;
+        float NovoSalario =  x * percentual;
+
+        System.out.println("Aumento de " + aumento + " %");
 
         System.out.println("Novo salário: " + NovoSalario);
-
-
 
     }
 }
