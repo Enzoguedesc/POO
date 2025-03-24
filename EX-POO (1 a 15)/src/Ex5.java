@@ -20,6 +20,7 @@ public class Ex5 {
 
         System.out.printf("%d seg = %d h %d min %d seg \n", t, hora, min, seg);
          */
+
         int tempo = Integer.parseInt(JOptionPane.showInputDialog("Digite o tempo em segundos."));
 
         int hora = tempo / 3600;
@@ -28,9 +29,6 @@ public class Ex5 {
         int seg = resto % 60;
 
         JOptionPane.showMessageDialog(null, tempo + " seg = " + hora + " horas " + min + " min " + seg + " seg ");
-
-
-
 
     }
 }
