@@ -4,13 +4,13 @@ Imprimir a expressão matemática junto com o seu resultado no formato: a op b =
 */
 
 
-
+import javax.swing.*;
 import java.util.Scanner;
 
 public class Ex11 {
     public static void main(String[] args) {
-        Scanner teclado = new Scanner(System.in);
 
+        Scanner teclado = new Scanner(System.in);
 
         System.out.print("Digite uma operação (+, -, *, /): ");
         char op = teclado.next().charAt(0);
@@ -49,5 +49,8 @@ public class Ex11 {
         }
 
         System.out.println(a + " " + op + " " + b + " = " + resultado);
+
+
+
     }
 }
