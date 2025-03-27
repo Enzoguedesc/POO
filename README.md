@@ -12,13 +12,11 @@
 
 - na ULM uma classe é representada em um retangulo com 3 compartimentos. 1 - Nome da classe, 2 - Atributos, 3 - Métodos
 
-| Nome da Classe |
-|----------------|
-| Atributos   |
-| Métodos    |
+| UML        | Exemplo        |
+|-----------------|----------------|
+| **Nome da Classe** | Aluno         |
+| **Atributos**     | - Matrícula<br>- Nome<br>- Curso |
+| **Métodos**       | - TrocarDeCurso()<br>- MudarDeNome() |  
 
 
-
- 
-
- Estado dos obejtos é definido nos atribustos da classe 
+ O estado dos obejtos é definido nos atribustos da classe 
