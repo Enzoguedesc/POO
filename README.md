@@ -30,10 +30,12 @@
 ## Hernaça em java
 - Por meio da palavra reservada extends, uma subclasse pode herdar propriedades de uma superclasse.
 
-- Ex: 
-public class Aluno 
-    extends Pessoa {
-    ...
-}
+- Ex:
+```
+public class Aluno  
+    extends Pessoa {  
+    ...  
+  }
+```
 
 - Em java não existe herança múltipla entre classes.
