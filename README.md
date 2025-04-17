@@ -22,3 +22,18 @@
  O estado dos obejtos é definido nos atribustos da classe 
 
  
+## Herança
+- Mecanismo da OO que possibilita a um subtipo aproveitar propriedades definidas em um supertipo.  
+
+- Uma maneira de promover reúso, porém é a pior maneira de promover reuso.
+
+## Hernaça em java
+- Por meio da palavra reservada extends, uma subclasse pode herdar propriedades de uma superclasse.
+
+- Ex: 
+public class Aluno 
+    extends Pessoa {
+    ...
+}
+
+- Em java não existe herança múltipla entre classes.
