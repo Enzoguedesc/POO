@@ -47,6 +47,8 @@ public class Aluno
 ```
 - Em java não existe herança múltipla entre classes.
 
+---
+
 ## 🧬 Vantagens da Herança (POO)
 - aumento de produtividade
 
@@ -85,6 +87,8 @@ a.emitirSom();  // Pode chamar o som específico do Cachorro
 ### 📦 5. Redução de redundância
 
 Você evita repetir atributos e métodos comuns em várias classes, centralizando-os na superclasse.
+
+---
 
 
 
