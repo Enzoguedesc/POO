@@ -1,6 +1,8 @@
+package model;
+
 public class Pessoa {
-    String nome;
-    String telefone;
+    private String nome;
+    private String telefone;
 
     // Metodo construtor padrao (vazio e sem parametros).
     // Um metodo construtor é responsavel por instanciar um objeto,
@@ -22,5 +24,21 @@ public class Pessoa {
     public void mudarTelefone(String telefone){  // possui indicador de retorno, mas nao possui retorno (void)
         this.telefone = telefone;
 
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getTelefone() {
+        return telefone;
+    }
+
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
     }
 }
