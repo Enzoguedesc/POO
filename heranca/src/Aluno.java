@@ -1,7 +1,7 @@
 public class Aluno extends Pessoa{
-    String matricula;
     String nome;
     String telefone;
+    String matricula;
 
     public void mudarTelefone(String telefone){
         this.telefone = telefone;
@@ -13,5 +13,13 @@ public class Aluno extends Pessoa{
         this.matricula = matricula;
     }
 
+    public Aluno(String nome, String telefone, String matricula){
+        super(nome, telefone);
+        this.matricula = matricula;
+    }
+
+    public Aluno(){
+
+    }
 
 }
