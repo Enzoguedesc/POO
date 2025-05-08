@@ -12,9 +12,9 @@
 
 - na ULM uma classe é representada em um retangulo com 3 compartimentos. 1 - Nome da classe, 2 - Atributos, 3 - Métodos
 
-| UML        | Exemplo        |
-|-----------------|----------------|
-| **Nome da Classe** | Aluno         |
+| UML        |    Exemplo     |
+|-----------------|:--------------:|
+| **Nome da Classe** |     Aluno     |
 | **Atributos**     | - Matrícula<br>- Nome<br>- Curso |
 | **Métodos**       | - TrocarDeCurso()<br>- MudarDeNome() |  
 
@@ -23,7 +23,7 @@
 
  
 ## Herança
-- Mecanismo da OO que possibilita a um subtipo aproveitar propriedades definidas em um supertipo.
+- **Mecanismo da OO que possibilita a um subtipo aproveitar propriedades definidas em um supertipo.**
 
   Essas propriedades são: Métodos, Relacionamentos e Atributos  
 
@@ -95,14 +95,21 @@ Capacidade de um objeto restringir o acesso a determinadas propriedades.
 Em Java, é realizado por meio de modificadores de visibilidade.
 
 ### Modificadores de visibilidade:
-  - **public:** Visível em qualquer lugar
-  - **private:** Visível apenas dentro da classe
-  - **protected:** Visível apenas dentro da classe e subclasses
-  - **"package":** Visível apenas dentro do pacote
+  - **public:** A propriedade pode ser acessada por objetos de quaisquer classes do mesmo projeto.
+  - **private:** A propriedade pode ser acessada apenas por quaisquer objetos da mesma classe.
+  - **protected:** A propriedade pode ser acessada por:  
+1)Objetos de quaisquer classes do mesmo pacote ou;  
+2)Por suas superclasses desde que a propriedade tenha sido declarada na propria superclasse.
+  - **"package":** A propriedade pode ser acessada apenas por objetos dentro do mesmo pacote.
+
+>A visibilidade de uma propriedade interfere na herança?  
+**SIM**, por conta dos modificadores de visibilidade (public, private, protected, package)
 
 ### Getters e Setters:
 - Getters (obtém) e Setters (define) permitem acessar e modificar os atributos privados de uma classe.
 - Getters retornam o valor do atributo, enquanto Setters definem o valor do atributo.
+
+---
 
 ## 🔷 Monolito
 
@@ -120,14 +127,9 @@ Em Java, é realizado por meio de modificadores de visibilidade.
 
 ## 🧱 Arquitetura MVC (Model-View-Controller)
 
-A arquitetura **MVC** organiza o código da aplicação separando **interface**, **lógica de negócio** e **dados**.
+A arquitetura **MVC** organiza o código da aplicação separando interesses e reponsabilidades.
 
 ### Componentes:
-
-- **Model (Modelo):**
-  - Representa os **dados** da aplicação e suas regras de persistência.
-  - É responsável por interagir com o **banco de dados**.
-  - _Exemplo: uma classe `Produto` que representa a tabela de produtos no banco._
 
 - **View (Visão):**
   - Responsável pela **interface com o usuário**.
@@ -139,6 +141,13 @@ A arquitetura **MVC** organiza o código da aplicação separando **interface**,
   - Contém a **lógica de negócio**, processando requisições e definindo o que deve ser exibido ou armazenado.
   - _Exemplo: lógica de cálculo de desconto em uma compra._
 
+- **Model (Modelo):**
+  - Representa os **dados** da aplicação e suas regras de persistência.
+  - É responsável por interagir com o **banco de dados**.
+  - _Exemplo: uma classe `Produto` que representa a tabela de produtos no banco._
+  - **Entidade de domínio**.
+
+  
 ### ✅ Vantagens do MVC
 
 - **Baixo Acoplamento:**
@@ -153,3 +162,6 @@ A arquitetura **MVC** organiza o código da aplicação separando **interface**,
 
 - **Melhor Manutenção e Escalabilidade:**
   - Adicionar funcionalidades ou corrigir erros se torna mais simples e seguro.
+
+### O que é Abstração
+

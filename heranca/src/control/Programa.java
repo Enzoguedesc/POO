@@ -60,10 +60,15 @@ public class Programa {
         prof1.mudarTitulacao("Mestre");
         System.out.println("Titulacao: " + prof1.getTitulacao());
 
+        // usando o metodo construtor. Usado para definir atributos obrigatorios.
         Professor prof2 = new Professor("Joao", "3423452353", "Doutor");
         System.out.println("Nome prof2: " + prof2.getNome());
         System.out.println("Telefone prof2: " + prof2.getTelefone());
         System.out.println("Titulacao prof2: " + prof2.getTitulacao());
+
+        // mudando de nome com o metodo SET
+        prof2.setNome("Pedro");
+        System.out.println("Novo nome:" + prof2.getNome());
 
         System.out.println("---------------------------");
 
