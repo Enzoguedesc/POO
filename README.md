@@ -95,19 +95,20 @@ Capacidade de um objeto restringir o acesso a determinadas propriedades.
 Em Java, é realizado por meio de modificadores de visibilidade.
 
 ### Modificadores de visibilidade:
-  - **public:** A propriedade pode ser acessada por objetos de quaisquer classes do mesmo projeto.
-  - **private:** A propriedade pode ser acessada apenas por quaisquer objetos da mesma classe.
-  - **protected:** A propriedade pode ser acessada por:  
+  - **public (+):** A propriedade pode ser acessada por objetos de quaisquer classes do mesmo projeto.
+  - **private (-):** A propriedade pode ser acessada apenas por quaisquer objetos da mesma classe.
+  - **protected (#):** A propriedade pode ser acessada por:  
 1)Objetos de quaisquer classes do mesmo pacote ou;  
 2)Por suas superclasses desde que a propriedade tenha sido declarada na propria superclasse.
-  - **"package":** A propriedade pode ser acessada apenas por objetos dentro do mesmo pacote.
+  - **"package" ( ):** A propriedade pode ser acessada apenas por objetos dentro do mesmo pacote.
 
 >A visibilidade de uma propriedade interfere na herança?  
 **SIM**, por conta dos modificadores de visibilidade (public, private, protected, package)
 
 ### Getters e Setters:
 - Getters (obtém) e Setters (define) permitem acessar e modificar os atributos privados de uma classe.
-- Getters retornam o valor do atributo, enquanto Setters definem o valor do atributo.
+- Getters retornam o valor do atributo
+- Setters definem o valor do atributo.
 
 ---
 
@@ -163,5 +164,7 @@ A arquitetura **MVC** organiza o código da aplicação separando interesses e r
 - **Melhor Manutenção e Escalabilidade:**
   - Adicionar funcionalidades ou corrigir erros se torna mais simples e seguro.
 
-### O que é Abstração
+## Polimorfismo
+
+Permite que objetos de subclasses sejam tratados como objetos da superclasse, facilitando o uso de **polimorfismo**.
 
