@@ -166,5 +166,12 @@ A arquitetura **MVC** organiza o código da aplicação separando interesses e r
 
 ## Polimorfismo
 
-Permite que objetos de subclasses sejam tratados como objetos da superclasse, facilitando o uso de **polimorfismo**.
+Permite que um mesmo método possa ser implementado de diferentes formas.
+Em Java, o polimorfismo pode ser classificado em **polimorfismo de compilação** (ou sobrecarga) e **polimorfismo de tempo de execução** (ou sobrescrita).
 
+### Tipos de Polimorfismo:
+
+- **Polimorfismo de compilação:**   
+O comportamento do método depende do tipo de objeto que o invoca. Este polimorfismo ocorre na fase de compilação.
+- **Polimorfismo de tempo de execução:**  
+O comportamento do método depende do objeto que o invoca. Este polimorfismo ocorre na fase de execução.

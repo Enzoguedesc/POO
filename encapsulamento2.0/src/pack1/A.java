@@ -11,7 +11,6 @@ public class A {
 
     void testeA() {
         D d = new D();
-        d.
 
     }
 
