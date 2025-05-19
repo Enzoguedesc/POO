@@ -175,3 +175,4 @@ Em Java, o polimorfismo pode ser classificado em **polimorfismo de compilação*
 O comportamento do método depende do tipo de objeto que o invoca. Este polimorfismo ocorre na fase de compilação.
 - **Polimorfismo de tempo de execução:**  
 O comportamento do método depende do objeto que o invoca. Este polimorfismo ocorre na fase de execução.
+
