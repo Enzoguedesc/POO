@@ -1,4 +1,4 @@
 package exemplo;
 
-public interface IB {
+public interface IB implements IA{
 }

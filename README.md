@@ -232,6 +232,17 @@ System.out.println("Au au!");
 
   - Embora não possa ser instanciada, a classe abstrata pode ter construtores que serão chamados pelas subclasses através do super.
 
+###  Método Abstrato
+Um método abstrato é como uma promessa:
+A classe está dizendo:
+
+>“Esse método vai existir em todas as subclasses, mas quem herdar vai ter que escrever o código dele.”
+
+#### ✅ Características:  
+- Não tem corpo (não tem {} com código dentro).
+- É declarado dentro de uma classe abstrata.
+- É obrigatório ser implementado nas subclasses (filhas), a menos que a subclasse também seja abstrata.
+
 
 ## Interfaces
 
@@ -254,3 +265,4 @@ Java: Implements
 - Evita que a variável seja modificada.
 
 **OBS:** não faz sentido usar o `final` onde se usa `abstract`.
+
