@@ -10,6 +10,7 @@ public class Moto extends Veiculo {
     // Sobrescrita do metodo concreto frear() definido na superclasse
     @Override                         // Override só no metodo sobrecrito
     public String frear(){
-        return "Freando a moto";
+        //return "Freando a moto";
+        return super.frear();     // chama o metodo da superclasse
     }
 }

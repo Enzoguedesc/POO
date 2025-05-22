@@ -201,3 +201,56 @@ Em Java, o polimorfismo se divide em dois tipos principais:
 - **Flexibilidade de Reutilização:** Permite adicionar novos comportamentos sem alterar a estrutura existente.
 
 ## Classes Abstratas
+- Em Java, classes abstratas são classes que não podem ser instanciadas diretamente e que servem como modelo base para outras classes. Elas são utilizadas quando você quer definir uma estrutura comum para um conjunto de classes relacionadas, mas deixando alguns comportamentos para serem implementados pelas subclasses.
+ 
+- **Regrinha:** uma classe abstrata não precisa ter métodos abstratos; mas se a classe tiver pelo menos um método abstrato, obrigatoriamente ela deve ser declarada como abstrata.
+
+
+### Características principais
+
+- Não pode ser instanciada:
+
+```Animal a = new Animal(); // ERRO! Classe abstrata não pode ser instanciada```
+
+- Pode conter métodos abstratos e concretos:
+
+  - Métodos abstratos não têm corpo e devem ser implementados nas subclasses.
+
+  - Métodos concretos podem ter implementação comum para todas as subclasses.
+
+- Serve como base para herança:
+
+```
+public class Cachorro extends Animal {
+@Override
+public void fazerSom() {
+System.out.println("Au au!");
+  }
+}
+```
+- Pode ter atributos e construtores:
+
+  - Embora não possa ser instanciada, a classe abstrata pode ter construtores que serão chamados pelas subclasses através do super.
+
+
+## Interfaces
+
+- Uma interface em Java representa um contrato de comportamento, definindo um conjunto de métodos que devem ser implementados pelas classes que a implementarem.
+
+![Interfaces](https://miro.medium.com/v2/resize:fit:1180/1*qNMQnjs0G7pl8ImCyj6MhA.jpeg)  
+UML: Realização  
+Java: Implements  
+
+
+**`final` na declaração da classe:**
+- Evita que a classe seja herdada.
+
+**`final` na declaração de um método:**
+
+- Evita que o metodo seja sobreescrito.
+
+**`final`na declaração de uma variável:**
+
+- Evita que a variável seja modificada.
+
+**OBS:** não faz sentido usar o `final` onde se usa `abstract`.
