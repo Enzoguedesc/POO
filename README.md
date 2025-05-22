@@ -166,13 +166,38 @@ A arquitetura **MVC** organiza o código da aplicação separando interesses e r
 
 ## Polimorfismo
 
-Permite que um mesmo método possa ser implementado de diferentes formas.
-Em Java, o polimorfismo pode ser classificado em **polimorfismo de compilação** (ou sobrecarga) e **polimorfismo de tempo de execução** (ou sobrescrita).
+Ele permite que métodos com o mesmo nome possam se comportar de maneiras diferentes, dependendo do contexto em que são utilizados.
 
-### Tipos de Polimorfismo:
+Em Java, o polimorfismo se divide em dois tipos principais:
 
-- **Polimorfismo de compilação:**   
-O comportamento do método depende do tipo de objeto que o invoca. Este polimorfismo ocorre na fase de compilação.
-- **Polimorfismo de tempo de execução:**  
-O comportamento do método depende do objeto que o invoca. Este polimorfismo ocorre na fase de execução.
+### Tipos de Polimorfismo
 
+- **Polimorfismo de compilação (sobrecarga de métodos):**  
+  Ocorre quando há múltiplos métodos com o mesmo nome, mas com assinaturas diferentes (quantidade ou tipo de parâmetros). A escolha de qual método será chamado é feita durante a compilação.
+
+- **Polimorfismo de tempo de execução (sobrescrita de métodos):**  
+  Também chamado de *late binding*, ocorre quando uma subclasse fornece uma implementação específica para um método já definido em sua superclasse. A escolha de qual método será executado acontece em tempo de execução, com base no tipo real do objeto.
+
+### Sobrecarga vs. Sobrescrita
+
+- **Sobrecarga de métodos (`overloading`):**  
+  Permite definir múltiplos métodos com o mesmo nome em uma mesma classe, desde que possuam assinaturas diferentes. É usada para aumentar a flexibilidade e a legibilidade do código.
+
+- **Sobrescrita de métodos (`overriding`):**  
+  Permite redefinir um método de uma superclasse em uma subclasse, mantendo a assinatura do método original. É usada para implementar a herança e a polimorfismo.  
+
+### 🧬 Vantagens do Polimorfismo
+
+- **Flexibilidade:** Permite adicionar novos comportamentos sem alterar a estrutura existente.
+
+- **Flexibilidade de Extensibilidade:** Permite adicionar novos tipos de objetos sem alterar a estrutura existente.
+
+- **Flexibilidade de Manutenção:** Permite adicionar novos comportamentos sem alterar a estrutura existente.
+
+- **Flexibilidade de Escalabilidade:** Permite adicionar novos tipos de objetos sem alterar a estrutura existente.
+
+- **Flexibilidade de Testes:** Permite adicionar novos comportamentos sem alterar a estrutura existente.
+
+- **Flexibilidade de Reutilização:** Permite adicionar novos comportamentos sem alterar a estrutura existente.
+
+## Classes Abstratas
