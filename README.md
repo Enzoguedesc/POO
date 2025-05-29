@@ -266,3 +266,83 @@ Java: Implements
 
 **OBS:** não faz sentido usar o `final` onde se usa `abstract`.
 
+---
+
+## 📚 Relacionamentos entre Classes (OOP)
+
+Em programação orientada a objetos, os relacionamentos entre classes definem como os objetos se conectam e interagem dentro do sistema.
+
+### 1. 🧬 Generalização (Especificação)
+Uma classe herda atributos e métodos de outra. Define uma relação "é um(a)".
+
+**Exemplo:** Funcionario é um tipo de Pessoa.
+- "È um tipo de ..."  
+
+```java
+class Pessoa {
+    String nome;
+}
+
+class Funcionario extends Pessoa {
+    double salario;
+}
+```
+
+### 2. 🔗 Agregação  
+É uma forma especial de associação, do tipo todo-parte, 
+onde as partes podem existir independentemente do todo.
+
+**Exemplo:** Uma Universidade possui vários Departamentos, mas os Departamentos podem existir sozinhos.
+
+- "Tem (parte) ..."
+
+```java
+class Universidade {
+    Departamento[] departamentos;
+}
+```
+
+### 3. 🧱 Composição
+Também é uma relação todo-parte, mas as partes não existem sem o todo.
+
+**Exemplo:** Um Pedido contém vários Itens, que não existem fora do Pedido.
+
+- "É composto de ..."  
+
+```java
+class Pedido {
+  private List<Item> itens = new ArrayList<>();
+}
+``` 
+
+OBS:
+> - Se uma parte puder fazer parte de um todo, ela deve ser **composição**.
+> - Se uma parte nao puder fazer parte de um todo, ela deve ser **agregação**.
+
+
+### 4. 🧩 Associação  
+Representa um vínculo genérico entre duas classes. Pode ter cardinalidade **(1:1, 1:n, n:n).**
+
+**Exemplo:** Um Professor leciona várias Disciplinas.
+- "Possui um ..."  (DEFINIR A SEMÂNTICA)  
+ASSOCIACAO (Dependência)
+
+
+```java
+class Professor {
+  Disciplina[] disciplinas;
+}
+```
+
+  
+### 📝 Resumo Tabela
+| Tipo            | Palavra-chave         | Exemplo                     | Força da relação |
+|-----------------| --------------------- | --------------------------- | ---------------- |
+| **Associação**  | "usa", "possui"       | Professor - Disciplina      | Média            |
+| **Agregação**   | "tem (parte)"         | Universidade - Departamento | Fraca            |
+| **Composição**  | "é composto por"      | Pedido - Item               | Forte            |
+| **Herança**     | "é um(a)"             | Funcionario - Pessoa        | Forte            |
+| **Dependência** | "usa temporariamente" | Relatorio - Funcionario     | Fraca            |
+
+
+![Relacionamentos entre Classes](https://www.macoratti.net/net_uml5.gif)
