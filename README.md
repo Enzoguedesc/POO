@@ -2,8 +2,28 @@
 
 ## Exercícios e teorias em JAVA  
 
+### Operadores de Incremento
+Além dos operadores citados anteriormente, o operador de incremento é usado para aumentar o valor de uma variável em 1. Existem dois tipos de operadores de incremento: o operador de pré-incremento (++variavel) e o operador de pós-incremento (variavel++).
 
-### Abstração da OO  
+O operador de pré-incremento (++variavel) aumenta o valor da variável em 1 antes de usar a variável em uma expressão. Aqui está um exemplo:
+```java
+int num = 5;
+int resultado = ++num; //num é incrementado para 6 e depois atribuído a resultado
+System.out.println(num); // imprime 6
+System.out.println(resultado); // imprime 6
+
+```
+Já o operador de pós-incremento (variavel++) aumenta o valor da variável em 1 depois de usar a variável em uma expressão. Aqui está um exemplo:
+```java
+int num = 5;
+int resultado = num++; //num é atribuído primeiramente à variável resultado e depois incrementado para 6
+System.out.println(num); // imprime 6
+System.out.println(resultado); // imprime 5
+```
+
+---
+
+## Abstração da OO  
 - **Classe:** Molde para obejtos; Representação genérica das propriedades e comportamento de elementos de um conjunto.
 
 - **Objeto:** Instância (ocorrencia especifica) de uma classe.
@@ -21,7 +41,7 @@
 
  O estado dos obejtos é definido nos atribustos da classe 
 
- 
+----
 ## Herança
 - **Mecanismo da OO que possibilita a um subtipo aproveitar propriedades definidas em um supertipo.**
 
