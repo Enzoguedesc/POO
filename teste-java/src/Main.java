@@ -21,5 +21,25 @@ public class Main {
         System.out.println("Resultado da multiplicaçao: " + multiplicaçao);
         System.out.println("Resultado da divisao: " + divisao);
 
+        System.out.println("-----------");
+
+        // Comparação de Strings
+        String senha = "123";
+        if (senha.equals("123")) {
+            System.out.println("Senha correta");
+        } else {
+            System.out.println("Senha incorreta");
+        }
+
+        System.out.println("-----------");
+
+        // text blockº
+        String mensagem = """
+                  Olá, mundo!
+                  Este é um Text Block.
+                  Ele permite escrever textos com múltiplas linhas
+                  sem precisar usar caracteres de escape ou quebras de linha manualmente ou concatenações.
+                  """;
+        System.out.println(mensagem);
     }
 }
