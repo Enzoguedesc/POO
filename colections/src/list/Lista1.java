@@ -22,8 +22,11 @@ public class Lista1 {
         String itemDaLista = "Café";
         lista.add(itemDaLista);
         lista.add(itemDaLista);   // Isto é uma duplicata
+        lista.remove(itemDaLista);
+        lista.remove("Ovos");  // Ele vai excluir o item "Ovos"
 
         System.out.println(lista.get(0));   // Pão de forma
+        System.out.println(lista);
 
         System.out.println("--------------1º-------------");
 
