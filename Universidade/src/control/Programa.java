@@ -62,6 +62,7 @@ public class Programa {
         profTalita.addTurma(pooSemProf);
         profClyton.addTurma(ArqCompClython);
 
+        // add disciplina ao professor
         poo.addTurma(pooThiago);
         poo.addTurma(pooSemProf);
 
@@ -100,3 +101,4 @@ public class Programa {
     }
 
 }
+

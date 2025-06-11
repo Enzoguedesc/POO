@@ -1,0 +1,76 @@
+📝 Questão de Prova: Sistema Acadêmico (POO - Java)
+Enunciado:
+Você foi contratado para desenvolver um sistema acadêmico simples utilizando Programação Orientada a Objetos em Java. O sistema deve representar a estrutura de uma instituição de ensino, com alunos, professores, cursos, disciplinas e turmas.
+
+Parte 1 – Criação de Classes
+Implemente as seguintes classes com os atributos e métodos pedidos:
+
+a) Classe Aluno
+Atributos: nome (String), matricula (String), curso (Curso), disciplinas (Lista de Disciplina)
+
+Métodos:
+
+Construtor com todos os atributos.
+
+adicionarDisciplina(Disciplina d)
+
+Getters e setters para todos os atributos.
+
+b) Classe Professor
+Atributos: nome (String), disciplinas (Lista de Disciplina)
+
+Métodos:
+
+Construtor com o nome.
+
+adicionarDisciplina(Disciplina d)
+
+Getters e setters.
+
+c) Classe Disciplina
+Atributos: nome (String), cargaHoraria (int)
+
+Métodos:
+
+Construtor com os atributos.
+
+Getters e setters.
+
+d) Classe Curso
+Atributos: nome (String), turmas (Lista de Turma)
+
+Métodos:
+
+Construtor com o nome.
+
+adicionarTurma(Turma t)
+
+Getters e setters.
+
+e) Classe Turma
+Atributos: disciplina (Disciplina), professor (Professor), alunos (Lista de Aluno)
+
+Métodos:
+
+Construtor com a disciplina e o professor.
+
+adicionarAluno(Aluno a)
+
+Getters e setters.
+
+Parte 2 – Classe Programa
+Implemente uma classe Programa com o método main para:
+
+Criar um curso de nome “Ciência da Computação”.
+
+Criar duas disciplinas: “POO” e “Estrutura de Dados”.
+
+Criar um professor, adicionar a ele a disciplina “POO”.
+
+Criar uma turma da disciplina “POO”, com o professor.
+
+Criar dois alunos, matriculá-los no curso e adicioná-los à turma.
+
+Adicionar a turma ao curso.
+
+Exibir no console o nome da disciplina da turma e os nomes dos alunos matriculados nela.
