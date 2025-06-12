@@ -9,7 +9,7 @@ public class Disciplina {
     private String nome;
     private int cargaHoraria;
     private Set<Turma> turmas;
-    private Curso curso;
+    private Curso curso;  // uma disciplina pertence a um curso
 
 
     public Disciplina(String codigo, String nome, int cargaHoraria, Curso curso) {

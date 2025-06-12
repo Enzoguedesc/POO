@@ -9,7 +9,7 @@ public class Professor {
     private String matricula;
     private String nome;
     private String titulacao;
-    private Set<Turma> turmas;  // Set para armazenar as turmas
+    private Set<Turma> turmas;  // O professor pode dar aula em varias turmas
 
     public Professor(String matricula, String nome, String titulacao) {
         this.turmas = new HashSet<Turma>();
@@ -50,13 +50,8 @@ public class Professor {
         this.turmas = turmas;
     }
 
-    public List<Disciplina> getDisciplinas() {
-        return disciplinas;
-    }
-
-    public void setDisciplinas(List<Disciplina> disciplinas) {
-        this.disciplinas = disciplinas;
-    }
+    // Dar aula em várias turmas
+    // Adicionar turma e remover turma
 
     public void addTurma(Turma turma) {
         turmas.add(turma);
@@ -65,4 +60,5 @@ public class Professor {
     public void removerTurma(Turma turma) {
         turmas.remove(turma);
     }
+
 }

@@ -66,6 +66,7 @@ public class Programa {
         poo.addTurma(pooThiago);
         poo.addTurma(pooSemProf);
 
+        // Mostrando qual professor ministra a disciplina POO
         System.out.println(pooThiago.getProfessor().getNome());
 
         System.out.println("-----------------------------------");

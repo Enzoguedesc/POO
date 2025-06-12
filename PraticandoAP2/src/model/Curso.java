@@ -8,15 +8,17 @@ public class Curso {
 
     private String codigo;
     private String nome;
-    private Set<Disciplina> disciplinas;  // disciplinas do curso
+    private Set<Disciplina> disciplinas;  // O curso tem várias disciplinas
 
-
+    // Construtor
     public Curso(String codigo, String nome) {
         this.codigo = codigo;
         this.nome = nome;
-        this.disciplinas = new HashSet<Disciplina>();  // HashSet para armazenar as disciplinas
+        this.disciplinas = new HashSet<Disciplina>();
     }
 
+
+    // Getters e Setters
     public String getCodigo() {
         return codigo;
     }
@@ -42,6 +44,10 @@ public class Curso {
         this.disciplinas = disciplinas;
     }
 
+
+    // Métodos
+    // Add Disciplina e Remover Disciplina
+
     public void addDisciplina(Disciplina disciplina) {
         disciplinas.add(disciplina);
     }
@@ -49,4 +55,5 @@ public class Curso {
     public void removerDisciplina(Disciplina disciplina) {
         disciplinas.remove(disciplina);
     }
+
 }

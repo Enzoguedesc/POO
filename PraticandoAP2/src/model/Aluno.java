@@ -1,22 +1,31 @@
 package model;
 
-import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class Aluno {
 
     private String matricula;
     private String nome;
-    private Curso curso;     // um aluno pertence a um curso
-    private List<Disciplina> disciplinas;   // um aluno pode estar matriculado em várias disciplinas
+    private Set<Turma> turmas;  // um aluno pode estar matriculado em várias turmas
 
-    public Aluno(String matricula, String nome, Curso curso) {
+//  private Curso curso;     // um aluno pertence a um curso
+//  private List<Disciplina> disciplinas;   // um aluno pode estar matriculado em várias disciplinas
+
+
+    public Aluno(String matricula, String nome ) {  // Curso curso
         this.matricula = matricula;
         this.nome = nome;
-        this.curso = curso;
-        this.disciplinas = new ArrayList<>();  // Serve para armazenar as disciplinas
+        this.turmas = new HashSet<Turma>();  // HashSet para armazenar as turmas, sem duplicatas
+
+
+//      this.curso = curso;
+//      this.disciplinas = new ArrayList<>();  // Serve para armazenar as disciplinas
     }
 
+
+    // Getters e Setters
     public String getMatricula() {
         return matricula;
     }
@@ -33,19 +42,38 @@ public class Aluno {
         this.nome = nome;
     }
 
-    public Curso getCurso() {
-        return curso;
+    public Set<Turma> getTurmas() {
+        return turmas;
     }
 
-    public void setCurso(Curso curso) {
-        this.curso = curso;
+    public void setTurmas(Set<Turma> turmas) {
+        this.turmas = turmas;
     }
 
-    public List<Disciplina> getDisciplinas() {
-        return disciplinas;
+    // Add Turma e Remove Turma
+    public void addTurma(Turma turma) {
+        turmas.add(turma);
     }
 
-    public void setDisciplinas(List<Disciplina> disciplinas) {
-        this.disciplinas = disciplinas;
+    public void removeTurma(Turma turma) {
+        turmas.remove(turma);
     }
+
+
+
+    //    public Curso getCurso() {
+//        return curso;
+//    }
+//
+//    public void setCurso(Curso curso) {
+//        this.curso = curso;
+//    }
+//
+//    public List<Disciplina> getDisciplinas() {
+//        return disciplinas;
+//    }
+//
+//    public void setDisciplinas(List<Disciplina> disciplinas) {
+//        this.disciplinas = disciplinas;
+//    }
 }

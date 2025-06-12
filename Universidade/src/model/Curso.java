@@ -8,7 +8,7 @@ public class Curso {
     private String codigo;
     private String nome;
 
-    private Set<Disciplina> disciplinas;
+    private Set<Disciplina> disciplinas;  // Conjunto de disciplinas. um
 
 
     public Curso(String codigo, String nome) {   // Mé́todo construtor
